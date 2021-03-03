@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="row" style="height: 100vh !important;">
+		<article class="col-xl-4 col-lg-6 col-md-8 col-10 mx-auto my-auto">
+			<div class="card">
+				<h4 class="card-header text-center text-secondary py-3">SWE Team 5 Project</h4>
+				<div class="card-body">
+					<form method="get"
+						action="${pageContext.request.contextPath}/blocks">
+						<div class="input-group mb-3">
+							<input id="email-text"
+								type="text" class="form-control text-primary"
+								placeholder="Email" aria-label="email"
+                                aria-describedby="email"
+								required>
+							<div class="input-group-append">
+								<span class="input-group-text" id="email">@miu.edu</span>
+							</div>
+						</div>
+						<div class="input-group mb-3">
+							<input type="password" id="password-text"
+								class="form-control text-primary" placeholder="Password"
+								aria-label="password" aria-describedby="password"
+								required>
+						</div>
+						<div>
+							<button type="submit" id="submit-btn"
+								class="d-block btn btn-outline-secondary ms-auto" disabled>
+								Login</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</article>
+	</div>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous">
+		</script>
+</body>
+</html>
